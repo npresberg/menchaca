@@ -215,7 +215,8 @@
       </div>
     </section>
     <!-- section works -->
-    <!-- section contact -->
+    <!-- section contact  -->
+
     <section id="contact" class="section">
       <div class="container">
         <div class="row">
@@ -224,59 +225,163 @@
               <h3><span>Contacto</span></h3>
             </div>
             <div class="sub-heading">
-              <p>
-                Escribinos para adquirir nuestros productos y conocer más de nuestra técnica.
-              </p>
-            </div>
-            <div class="sub-heading">
-              <p>
-                Teléfono de Contacto: +59 89 910 2935
-              </p>
+              <p>Si quieres adquirir nuestros productos o tienes alguna duda escríbenos.</p>
             </div>
           </div>
         </div>
       </div>
-
       <div class="container">
         <div class="row">
-          <div class="col-md-12">
-
-            <!-- start contact form -->
+          <div class="col-md-6">
             <div class="cform" id="contact-form">
+              <div id="sendmessage"> Tu mensaje ha sigo enviado. Gracias! </div>
+              <div
+                class="portlet-boundary portlet-boundary_EsquareForm_WAR_EsquareFormportlet_ portlet-static portlet-static-end portlet-borderless EsquareForm-portlet "
+                id="p_p_id_EsquareForm_WAR_EsquareFormportlet_"> <span id="p_EsquareForm_WAR_EsquareFormportlet"></span>
+                <div class="portlet-borderless-container">
+                  <div class="portlet-body">
+                    <script type="text/javascript" src="/EsquareForm-portlet/js/main.js"></script>
+                    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
+                    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+                    <form action="" method="post" name="_EsquareForm_WAR_EsquareFormportlet_frm"
+                      id="_EsquareForm_WAR_EsquareFormportlet_frm"> <input
+                        name="_EsquareForm_WAR_EsquareFormportlet_formFields"
+                        id="_EsquareForm_WAR_EsquareFormportlet_formFields" type="hidden" value="test">
+                      <div class="success_message"
+                        style="display:none; font-weight: bold; padding-bottom: 10px; color: chartreuse; padding-left: 15px;">
+                        Email Sent Successfully !!!</div>
+                      <div class="error_message"
+                        style="display:none; color:red; font-weight: bold; padding-bottom: 10px; padding-left: 15px;">
+                        Sorry! Mail not sent contact Admin.</div>
 
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-md-6" id="contact-form" style="padding-left: 0; padding-right: 25px;">
+                            <div class="form-group">
+                              <label for="name">Nombre/Name</label>
+                              <input type="text" name="_EsquareForm_WAR_EsquareFormportlet_name" class="form-control"
+                                style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4EaVTO26DQBD1ohQWaS2lg9JybZ+AK7hNwx2oIoVf4UPQ0Lj1FdKktevIpel8AKNUkDcWMxpgSaIEaTVv3sx7uztiTdu2s/98DywOw3Dued4Who/M2aIx5lZV1aEsy0+qiwHELyi+Ytl0PQ69SxAxkWIA4RMRTdNsKE59juMcuZd6xIAFeZ6fGCdJ8kY4y7KAuTRNGd7jyEBXsdOPE3a0QGPsniOnnYMO67LgSQN9T41F2QGrQRRFCwyzoIF2qyBuKKbcOgPXdVeY9rMWgNsjf9ccYesJhk3f5dYT1HX9gR0LLQR30TnjkUEcx2uIuS4RnI+aj6sJR0AM8AaumPaM/rRehyWhXqbFAA9kh3/8/NvHxAYGAsZ/il8IalkCLBfNVAAAAABJRU5ErkJggg==&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
+                            </div>
 
-              <div id="sendmessage">Tu mensaje ha sido enviado. Gracias!</div>
-              <div id="errormessage"></div>
-              <form action="" method="post" role="form" class="contactForm">
-                <div class="form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Nombre/Name"
-                    data-rule="minlen:4" />
-                  <div class="validation"></div>
-                </div>
-                <div class="form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Email"
-                    data-rule="email" />
-                  <div class="validation"></div>
-                </div>
-                <div class="form-group">
-                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto/Subject"
-                    data-rule="minlen:4" />
-                  <div class="validation"></div>
-                </div>
-                <div class="form-group">
-                  <textarea class="form-control" name="message" rows="5" data-rule="required"
-                    data-msg="Please write something for us" placeholder="Mensaje/Message"></textarea>
-                  <div class="validation"></div>
-                </div>
+                            <div class="form-group">
+                              <label for="email">Email</label>
+                              <input type="text" name="_EsquareForm_WAR_EsquareFormportlet_email" class="form-control">
+                            </div>
 
-                <div class="text-center"><button type="submit" class="btn btn-lg btn-theme">Enviar</button></div>
-              </form>
+                            <div class="form-group">
+                              <label for="subject">Asunto/Subject</label>
+                              <input type="text" name="_EsquareForm_WAR_EsquareFormportlet_subject"
+                                class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                              <label for="message">Mensaje/Message</label>
+                              <textarea class="form-control" name="_EsquareForm_WAR_EsquareFormportlet_message" rows="7"
+                                id="message-form1-2w" data-form-field="Message"
+                                style="height:128px; background: rgba(227, 231, 228, 1) none repeat scroll 0 0;"></textarea>
+                            </div>
+
+                            <div class="input-group-btn sub">
+                              <input type="submit" name="sendForm" id="sendform" value="Enviar"
+                                class="btn btn-lg btn-theme pull-left btn-success">
+                            </div>
+
+                          </div>
+                        </div>
+
+                      </div>
+                    </form>
+
+                    <script type="text/javascript">
+
+                      /* function myFunction() {
+                          var x = document.getElementById("_EsquareForm_WAR_EsquareFormportlet_frm").elements;
+                          var values = "";
+                          for(var i=1; i < x.length; i++){
+                            if(x[i].type != "submit" && x[i].type != "button") {
+                              values = values + "," + x[i].name.replace("_EsquareForm_WAR_EsquareFormportlet_","");
+                            }
+                          	
+                          }
+                          
+                          document.getElementById("_EsquareForm_WAR_EsquareFormportlet_formFields").value = values.substring(1);
+                          
+                      } */
+
+                      jQuery("#_EsquareForm_WAR_EsquareFormportlet_frm").submit(function (e) {
+
+                        jQuery(".success_message").hide();
+                        jQuery(".error_message").hide();
+                        var form = jQuery(this);
+                        var x = document.getElementById("_EsquareForm_WAR_EsquareFormportlet_frm").elements;
+                        var values = "";
+                        for (var i = 1; i < x.length; i++) {
+                          if (x[i].type != "submit" && x[i].type != "button") {
+                            values = values + "," + x[i].name.replace("_EsquareForm_WAR_EsquareFormportlet_", "");
+                          }
+
+                        }
+
+                        document.getElementById("_EsquareForm_WAR_EsquareFormportlet_formFields").value = values.substring(1);
+
+                        jQuery.ajax({
+                          type: "POST",
+                          url: 'http://cmse2t03.esquarecart.com/home?p_p_id=EsquareForm_WAR_EsquareFormportlet&p_p_lifecycle=2&p_p_state=normal&p_p_mode=view&p_p_cacheability=cacheLevelPage&p_p_col_id=column-1&p_p_col_pos=4&p_p_col_count=6',
+                          data: form.serialize(), // serializes the form's elements.
+                          success: function (data) {
+                            var json = JSON.parse(data);
+                            var message = json.message;
+
+                            if (message == "success") {
+                              swal('Thank you!', 'We will get back to you.', 'success');
+                              document.getElementById("entry_1146038386").value = "";
+                              document.getElementById("entry_385875038").value = "";
+                              document.getElementById("entry_2062938677").value = "";
+                              document.getElementById("entry_1130752572").value = "";
+                              document.getElementById("entry_1403107004").value = "";
+                              document.getElementById("entry_95845949").value = "";
+
+                            } else {
+                              swal("Sorry!", "Sorry for the inconvenience :)", "error");
+                              document.getElementById("entry_1146038386").value = "";
+                              document.getElementById("entry_385875038").value = "";
+                              document.getElementById("entry_2062938677").value = "";
+                              document.getElementById("entry_1130752572").value = "";
+                              document.getElementById("entry_1403107004").value = "";
+                              document.getElementById("entry_95845949").value = "";
+
+                            }
+                          },
+                          error: function (data) {
+
+                          }
+                        });
+
+                        e.preventDefault(); // avoid to execute the actual submit of the form.
+                      });
+                    </script>
+                  </div>
+                </div>
+              </div>
+              <!--    <form action="contact/contact.php" method="post" role="form" class="contactForm">
+    							  <div class="form-group">
+    								<label for="name">Your Name</label>
+    								<input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="maxlen:4" data-msg="Please enter at least 4 chars" /> <div class="validation"></div> </div> <div class="form-group"> <label for="email">Your Email</label> <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" /> <div class="validation"></div> </div> <div class="form-group"> <label for="subject">Subject</label> <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="maxlen:4" data-msg="Please enter at least 8 chars of subject" /> <div class="validation"></div> </div> <div class="form-group"> <label for="message">Message</label> <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us"></textarea> <div class="validation"></div> </div> <button type="submit" class="btn btn-lg btn-theme pull-left">Send Message</button> </form> -->
             </div>
-            <!-- END contact form -->
+            <div class="clear"></div>
+          </div>
+          <div class="col-md-offset-1 col-md-4">
+            <h4><i class="fa fa-home"></i><span> Datos de Contacto: Uruguay</span></h4>
+            <p><i class="fa fa-phone"></i><span> +598 9910 2935</span></p>
+            <p><i class="fa fa-envelope"></i><span> info@menchacafelt.com</span></p>
+            <a href="http://marcapaisuruguay.gub.uy/" target="_blank">
+              <img src="assets/img/marcapais-logo.png" alt="">
+            </a>
           </div>
         </div>
       </div>
     </section>
+
     <!-- end section contact -->
     <footer>
       <div class="verybottom">
