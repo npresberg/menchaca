@@ -48,8 +48,8 @@
                 <ul class="nav navbar-nav navbar-right">
                   <li class="current"><a href="#intro">Inicio</a></li>
                   <li><a href="#about">Nosotras</a></li>
-                  <li><a href="#works">Catálogo</a></li>
-                  <li><a href="#contact">Contacto</a></li>
+                  <li><a href="#works">Galería</a></li>
+                  <li class="destacado"><a href="#contact">Contacto</a></li>
                   <li><a href="https://www.facebook.com/feltmenchaca" target="_blank" class="external icoFacebook"
                       title="Facebook"><i class="fa fa-facebook"></i></a></li>
                   <li><a href="https://ar.pinterest.com/menchacafelt/" target="_blank" class="external icoPinterest"
@@ -82,6 +82,59 @@
       </ul>
     </section>
     <!-- end intro -->
+
+    <!--==========================
+                  Subscribe Section
+                ============================-->
+    <section id="subscribe" class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 col-md-offset-1">
+            <div class="heading">
+              <h3>Newsletter</h3>
+              <div class="sub-heading">
+                <p>Dejanos tu e-mail para enviarte más información de nuestros productos.</p>
+              </div>
+            </div>
+
+            <form method="POST" action="/sendemail.php">
+              <input type="hidden" name="name" value="" />
+              <input type="hidden" name="subject" value="Newsletter" />
+              <input type="hidden" name="message" value="Mensaje automático del sitio" />
+              <div class="form-row justify-content-center">
+                <div class="col-md-10 col-md-offset-1">
+                  <input type="email" class="form-control" name="email" placeholder="Tu Email" data-rule="email"
+                    data-msg="E-mail" />
+                  <div class="validation"></div>
+                </div>
+                <div class="text-center"><button type="submit" class="btn btn-lg btn-theme">Enviar</button></div>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+      <div class="verybottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="aligncenter">
+                <ul class="social-network social-circle">
+                  <li><a href="https://www.facebook.com/feltmenchaca" target="_blank" class="icoFacebook"
+                      title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="https://ar.pinterest.com/menchacafelt/" target="_blank" class="icoPinterest"
+                      title="Pinterest"><i class="fa fa-pinterest"></i></a></li>
+                  <li><a href="https://www.instagram.com/menchacafelt/?hl=es-la" target="_blank" class="icoInstagram"
+                      title="Instagram"><i class="fa fa-instagram"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
     <!-- Section about -->
     <section id="about" class="section">
       <div class="container">
@@ -110,7 +163,7 @@
         <div class="row">
           <div class="col-md-8 col-md-offset-2">
             <div class="heading">
-              <h3><span>Catálogo</span></h3>
+              <h3><span>Galería de Imágenes</span></h3>
             </div>
             <div class="sub-heading">
               <p>
@@ -144,9 +197,10 @@
               <li><a href="assets/img/portfolio/8-01.jpg" class="fancybox" data-fancybox-group="gallery"
                   title="Portfolio name"><img src="assets/img/portfolio/8-01.jpg" alt="" /></a></li>
               <li><a href="assets/img/portfolio/9-01.jpg" class="fancybox" data-fancybox-group="gallery"
-                  title="Portfolio name"><img src="assets/img/portfolio/9-01.jpg" alt="" /></a></li>
-              <li><a href="assets/img/portfolio/10-01.jpg" class="fancybox" data-fancybox-group="gallery"
-                  title="Portfolio name"><img src="assets/img/portfolio/10-01.jpg" alt="" /></a></li>
+                  title="Portfolio name"><a href="assets/img/portfolio/9-01.jpg" alt="" /></a></li>
+              <li><a href="https://www.facebook.com/feltmenchaca/videos/681754702281150/" target="_blank"
+                  class="fancybox" data-fancybox-group="gallery" title="Portfolio name"><img
+                    src="assets/img/portfolio/10-01.jpg" alt="" /></a></li>
               <li><a href="assets/img/portfolio/11-01.jpg" class="fancybox" data-fancybox-group="gallery"
                   title="Portfolio name"><img src="assets/img/portfolio/11-01.jpg" alt="" /></a></li>
               <li><a href="assets/img/portfolio/12-01.jpg" class="fancybox" data-fancybox-group="gallery"
@@ -172,6 +226,11 @@
             <div class="sub-heading">
               <p>
                 Escribinos para adquirir nuestros productos y conocer más de nuestra técnica.
+              </p>
+            </div>
+            <div class="sub-heading">
+              <p>
+                Teléfono de Contacto: +59 89 910 2935
               </p>
             </div>
           </div>
