@@ -1217,3 +1217,17 @@ a.socialIcon:hover, .socialHoverClass {
 #subscribe i:hover {
 	color: #fff;
 }
+
+.chal {
+	margin-top: 50px;
+	padding-left: 80px;
+	padding-right: 80px;
+}
+
+#e-shop .pagos{
+margin-top: 80px;
+}
+
+#e-shop img{
+	margin-bottom: 80px;
+}
