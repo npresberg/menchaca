@@ -87,6 +87,34 @@
   $(window).load(initNice);
   $(window).resize(initNice);
 
+  $("form.form").submit(function (e) {
+    e.preventDefault();
+    var form = $(this);
+    var btn = form.find('[type="submit"]')
+    if (btn.is(':disabled')) {
+      return
+    }
+
+    form.find(".success_message").hide();
+    form.find(".error_message").hide();
+    btn.attr('disabled', 'disabled')
+
+    $.ajax({
+      type: form.attr('method'),
+      url: form.attr('action'),
+      data: form.serialize(), // serializes the form's elements.
+      success: function (message) {
+        form.find(".success_message").text(message).show();
+        form.find(".error_message").hide();
+      },
+      error: function (xhr) {
+        var message = xhr.responseText || xhr.statusText
+        form.find(".error_message").text(message).show();
+        form.find(".success_message").hide();
+      }
+    });
+  });
+
 })(jQuery);
 
 $(window).scroll(function () {

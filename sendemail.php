@@ -6,6 +6,10 @@
 require("class.phpmailer.php");
 require("class.smtp.php");
 
+header("Access-Control-Allow-Headers: *");
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Methods: *");
+
 $name = $_POST['name'];
 $email = $_POST['email'];
 $subject = $_POST['subject'];
@@ -49,9 +53,10 @@ $mail->AltBody = $message;
 
 $estadoEnvio = $mail->Send();
 if($estadoEnvio){
-    echo "OK";
+    echo "El mensaje de contacto se envio con exito!";
 } else {
-    echo "Ocurrió un error inesperado.";
+		echo "Ocurrió un error inesperado.";
+		die();
 }
 
 ?>
